@@ -63,6 +63,20 @@
         .table {
          word-break: break-all;
         }
+        /* El método de word-break: break-all afecta a toda la tabla y hace que los nombres de las columnas se quiebren y se vean incompletos con saltos de lineas
+        para evitar eso debemos de usar  word-wrap: break-word; en una columna especifica de un <td> ejemplo:
+        Hacer que solo se quiebre el texto del td que tiene el correo que esta en la columna 3 del td, ejemplo solo para vistas mobiles..
+          @media screen and (max-device-width: 480px) and (orientation: portrait) {
+              td:nth-child(3) {
+                background-color: red;
+
+                word-wrap: break-word;
+
+              }
+            }
+        Codigo completo para vistas moviles => https://stackoverflow.com/questions/69306818/unable-of-change-td-size-of-a-bootstrap-table
+        */
+
     
     </style>
   
